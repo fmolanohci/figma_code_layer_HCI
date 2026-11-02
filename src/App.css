@@ -1,0 +1,83 @@
+.page {
+  display: grid;
+  min-height: 100svh;
+  place-items: center;
+  padding: 24px;
+}
+
+.create-form {
+  width: 100%;
+  max-width: 420px;
+  padding: clamp(24px, 6vw, 40px);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface);
+}
+
+.create-form h1 {
+  margin: 0 0 32px;
+  font-size: 28px;
+  font-weight: 650;
+  line-height: 1.2;
+  letter-spacing: -0.8px;
+}
+
+.field {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.field label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.field input {
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+}
+
+.field input::placeholder {
+  color: var(--muted);
+}
+
+.create-form button {
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 8px;
+  background: var(--orange);
+  color: var(--text);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.create-form button:hover {
+  background: var(--orange-hover);
+}
+
+.create-form button:active {
+  background: var(--orange-active);
+}
+
+.create-form :is(input, button):focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+
+.form-status {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.form-status:not(:empty) {
+  margin-top: 20px;
+}
