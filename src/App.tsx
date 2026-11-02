@@ -17,7 +17,7 @@ function App() {
         onSubmit={handleSubmit}
         onChange={() => setSubmitted(false)}
       >
-        <h1 id="form-title">Crear registro</h1>
+        <h1 id="form-title">CREATE USER</h1>
 
         <div className="field">
           <label htmlFor="name" lang="en">Name</label>
